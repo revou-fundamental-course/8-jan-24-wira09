@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katik Kalkulator Matematik</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Selamat datang di Katik Kalkulator Matematik</h1>
+        
+        <div class="persegi-container">
+            <img src="img/persegi.png" alt="Persegi">
+            <h2>Rumus Luas Persegi</h2>
+            <p>Rumus Luas Persegi yaitu :</p>
+            <h3 style="font-weight: bold;">L = S x S</h3>
+            <p>Di mana : <br> L = Luas <br> S = Sisi</p>
+            <hr>
+            <h2>Hitung Luas Persegi</h2>
+            <input type="number" id="panjang" placeholder="Masukkan panjang sisi">
+            <button onclick="hitungLuasPersegi()">Hitung Luas Persegi</button>
+            <button onclick="resetluas()">Reset</button>
+            <h2 id="hasil"></h2>
+            <hr>
+            <div class="calculator">
+            <h2>Rumus Keliling Persegi</h2>
+            <p>Rumus Keliling Persegi yaitu :</p>
+            <h3 style="font-weight: bold;">K = 4s</h3>
+            <p>Di mana : <br> K = keliling persegi. <br> S = Sisi</p>
+                <h2>Hitung Keliling Persegi</h2>
+                <input type="number" id="side-length" placeholder="Masukkan nilai sisi">
+                <button onclick="calculatePerimeter()">Hitung Keliling Persegi</button>
+                <button onclick="resetkeliling()">Reset</button>
+                <h2 id="hasil-perimeter"></h2>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
